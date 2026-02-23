@@ -53,7 +53,7 @@ export default function App() {
       </main>
 
       <footer className="footer muted">
-        Tipp: Screenshot machen + GitHub Link in Bewerbungen einfügen.
+       
       </footer>
     </div>
   );

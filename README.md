@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🎫 Ticket Desk
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Ticket Management Dashboard built with **React + TypeScript + Vite**.
 
-Currently, two official plugins are available:
+This project simulates a simple helpdesk system where users can browse, search and filter support tickets.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📋 Display list of tickets
+- 🔎 Live search (title, description, email)
+- 🎛 Filter by status (Open / In Progress / Closed)
+- 🧾 Detailed ticket view
+- ⚡ Fast and lightweight setup using Vite
+- 🧠 Custom data mapping from API to structured Ticket model
+- 🎨 Clean dark UI layout
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- Custom Hooks
+- Functional Components
+- REST API (JSONPlaceholder for demo data)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+
+```
+src/
+├── components/
+├── hooks/
+├── models/
+├── utils/
+├── api/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📡 Data Source
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The project uses the public demo API:
+
+https://jsonplaceholder.typicode.com/posts
+
+The raw API data is mapped into a custom `Ticket` model using a transformation utility.
+
+---
+
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
 ```
+
+---
+
+## 🎯 Purpose
+
+This project was built as a portfolio project to demonstrate:
+
+- Clean React architecture
+- State management with hooks
+- Type-safe data modeling
+- API integration
+- Component-based design
+
+---
+
+## 👤 Author
+
+Feras Hababa  
+GitHub: https://github.com/FerasHB
