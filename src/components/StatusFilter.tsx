@@ -7,12 +7,7 @@ type Props = {
 
 export default function StatusFilter({ value, onChange }: Props) {
   return (
-    <select
-      value={value}
-      onChange={(e) => onChange(e.target.value as TicketStatus | "all")}
-      className="select"
-      aria-label="Filter status"
-    >
+    <select value={value} onChange={(e) => onChange(e.target.value as any)} className="select" aria-label="Filter status">
       <option value="all">Alle</option>
       <option value="open">Open</option>
       <option value="in_progress">In Progress</option>
