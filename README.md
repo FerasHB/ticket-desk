@@ -54,10 +54,11 @@ The raw API data is mapped into a custom `Ticket` model using a transformation u
 
 ## ▶️ Run Locally
 
+Clone the repository:
+
 ```bash
-npm install
-npm run dev
-```
+git clone https://github.com/FerasHB/ticket-desk.git
+cd ticket-desk
 
 ---
 
