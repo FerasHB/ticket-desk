@@ -72,7 +72,11 @@ This project was built as a portfolio project to demonstrate:
 - Component-based design
 
 ---
+## 📸 Preview
 
+![Ticket Desk Screenshot](assets/screenshot-1.png)
+
+---
 ## 👤 Author
 
 Feras Hababa  
