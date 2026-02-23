@@ -59,7 +59,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/FerasHB/ticket-desk.git
 cd ticket-desk
-
+```
 ---
 
 ## 🎯 Purpose
